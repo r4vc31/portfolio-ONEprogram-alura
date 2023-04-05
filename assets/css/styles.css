@@ -23,11 +23,11 @@ body {
     max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
-    padding: 4em 1em;
+    padding: 2em 1em;
     color: #566b78;
 }
 
-body > header {
+body>header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,18 +36,11 @@ body > header {
 }
 
 .icon {
-    height: 10vh;
-    object-fit: cover;
+    display: none;
 }
 
-nav > ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+nav>ul {
+    display: none;
 }
 
 h1,
@@ -81,10 +74,10 @@ span {
 form {
     width: 80%;
     margin: 0 auto;
-    background-color: hsla(160, 100%, 75%, 50%);
+    background-color: hsla(160, 100%, 75%, 20%);
     padding: 1rem;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 15px hsla(160, 100%, 75%, 60%);
+    box-shadow: 0px 0px 10px 15px hsla(160, 100%, 75%, 40%);
 }
 
 form div {
@@ -128,7 +121,7 @@ button:hover {
     margin: 1rem 0;
 }
 
-.social-icons-container a{
+.social-icons-container a {
     height: 70px;
     width: 70px;
 }
@@ -155,8 +148,31 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
 
 .principal-item {
     text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .principal-container {
+        flex-direction: row;
+    }
+
+    .icon {
+        display: block;
+        height: 10vh;
+        object-fit: cover;
+    }
+
+    nav>ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 }
