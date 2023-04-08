@@ -12,33 +12,36 @@
 <body>
 
     <header>
-        <img class="icon" src="assets/img/icon.jpeg" alt="Page Icon">
+        <img class="icon animated-image" src="assets/img/icon.jpeg" alt="Page Icon" class="animated-image">
         <nav>
             <ul>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#formation">Formation</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="download-cv">
+            <a href="assets/CV_r4vc31.pdf" download="cvRonaldVera">
+                <img src="assets/img/file-arrow-down-solid.svg" alt="" class="dowload-icon" title="Download CV">
+            </a>
+        </div>
     </header>
-
-
     <main>
 
-        <section>
+        <section id="start">
             <h1>Hi there 👋</h1>
             <div class="principal-container">
 
                 <div class="principal-item">
-                    <img src="https://avatars.githubusercontent.com/u/114179022?v=4" alt="Ronald Vera profile picture">
+                    <img src="assets/img/profile-picture.jpg" alt="Ronald Vera profile picture" class="animated-image">
                 </div>
 
                 <div class="principal-item">
                     <h2>I'm Ronald A. Vera C.</h2>
                     <p><span>(Mechatronics Engineering Student)</span></p>
-                    
+
                     <div class="social-icons-container">
                         <a href="https://github.com/r4vc31" target="_blank">
                             <div class="social-icons-item">
@@ -59,7 +62,7 @@
                 </div>
 
             </div>
-            
+
             <fieldset id="about-me">
                 <legend>About me</legend>
                 <p id="description">Technology enthusiast, in training to contribute to its advancement, development and
@@ -73,6 +76,7 @@
             <article>
                 <h3><span>PERSONAL INFO</span></h3>
                 <ul>
+                    <li>Age: 22 years old.</li>
                     <li>Residence: Ecuador, Guayas, Guayaquil.</li>
                     <li>Nationality: Ecuadorian.</li>
                 </ul>
@@ -109,6 +113,34 @@
             </article>
         </section>
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+
+                <div class="project-item">
+                    <figure>
+                        <figcaption>Text encrypter with Javascript</figcaption>
+                        <hr>
+                        <img src="assets/img/projectEncryptJS.png" alt="" class="project-image">
+
+                    </figure>
+                    <div class="about-project">
+                        <div class="project-code">
+                            <a href="https://github.com/r4vc31/chlg01EncriptadorJS" target="_blank">
+                                <img src="assets/img/square-github.svg" alt="" class="social-icon">
+                            </a>
+                        </div>
+                        <div class="project-page">
+                            <a href="https://r4vc31.github.io/chlg01EncriptadorJS/" target="_blank">
+                                <img src="assets/img/square-arrow-up-right-solid.svg" alt="" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section id="contact" class="contact">
             <h2>Contact</h2>
             <form action="#" method="post">
@@ -143,6 +175,11 @@
                         </label>
                     </fieldset>
                 </div>
+
+                <div>
+                    <label for="description">Description: </label><textarea name="" id="description" cols="30"
+                        rows="5"></textarea>
+                </div>
                 <div>
                     <button type="submit">SEND</button>
                 </div>
@@ -150,7 +187,9 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>by <a href="#start">@r4vc31</a></p>
+    </footer>
 </body>
 
 </html>
